@@ -1,0 +1,74 @@
+# ==============================================================================
+# Git Ignore Configuration for WealthFlow (Root, Backend, & Frontend)
+# ==============================================================================
+
+# --- Environment Variables & Secrets (CRITICAL) ---
+.env
+.env.*
+*.env
+!.env.example
+
+# --- Credentials, Keys & Certificates ---
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+
+# --- Databases & Local State ---
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+database.db
+
+# --- Personal Data, Backups & Exports ---
+*backup*.json
+*export*.json
+wealthflow_*.json
+
+# --- Dependencies ---
+node_modules/
+package-lock.json.bak
+
+# --- Build Outputs & Caches ---
+dist/
+build/
+bin/
+out/
+.expo/
+.expo-shared/
+.metro-cache/
+.turbo/
+web-build/
+
+# --- Native Build Artifacts (Expo Prebuild / React Native) ---
+frontend/android/
+frontend/ios/
+android/
+ios/
+
+# --- Logs & Debugging ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+p
+
+# --- OS & Editor Metadata ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

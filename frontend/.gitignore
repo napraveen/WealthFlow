@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Environment files & Secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Expo & Metro
+.expo/
+.expo-shared/
+.metro-cache/
+web-build/
+dist/
+build/
+bin/
+
+# Native directories (managed by Expo)
+android/
+ios/
+
+# Keystores & Certificates
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+google-services.json
+GoogleService-Info.plist
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backups & Data
+*.db
+*.sqlite
+*backup*.json
+*export*.json
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

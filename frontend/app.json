@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "WealthFlow",
+    "slug": "wealthflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#050505",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wealthflow.app",
+      "icon": "./assets/icon.png"
+    },
+    "android": {
+      "package": "com.wealthflow.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "url": "https://u.expo.dev/11db39e0-9485-44ed-845e-9d29fb3282ac"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "11db39e0-9485-44ed-845e-9d29fb3282ac"
+      }
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow WealthFlow to access your photos to set custom category icons."
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
